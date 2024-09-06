@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+li{
+  float: left;
+}
+li a{
+  text-align: center;
+  text-decoration: none;
+  padding: 40px;
+  font-size: 20px;
+  background-color: green;
+  display: block;
+  border-radius: 10px;
+  transition: 0.5s;
+ 
+}
+ul{
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.active{
+  background-color: red;
+}
+a:hover:not(.active){
+  background-color: greenyellow;
+  color: black;
+  cursor: pointer;
+}
+@media screen and (max-width:700px) {
+  li{
+    float: none;
+  }
+}
